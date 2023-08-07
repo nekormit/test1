@@ -1,0 +1,125 @@
+/*
+RMIT University Vietnam
+Course: COSC2430 Web Programming
+Semester: 2023A
+Assessment: Assignment 1
+Author: Tran Nhat Minh
+ID: s3977767
+Acknowledgement: Acknowledge the resources that you use here.
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+.bg-img {
+    max-width: 100%;
+    height: auto;
+    background-size: cover;
+}
+section h1 {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 30px;  
+}
+
+section h1 a {
+    font-family: 'Poppins', sans-serif;
+    font-size: 50px;
+    font-weight: 600;
+    color: rgba(255,255,255,0.7);
+    margin: 0; 
+    padding: 0; 
+    text-decoration: none; 
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+section h1 a.header:hover,
+section h1 a.header:active{
+    color: #fff;
+}
+  
+.book-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+.book {
+    width: 320px;
+    height: 500px;
+    border: 8px solid #24262b;
+    border-radius: 20px;
+    margin: 10px;
+    overflow: hidden;
+    position: relative;
+}
+.book-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.book-body {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: -100%;
+    position: absolute;
+    background: #1f3d4738;
+    backdrop-filter: brightness(0.7) blur(10px) ;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: 0.5s ease;
+}
+.book:hover .book-body {
+    right: 0;
+}
+.book-author {
+    text-transform: capitalize;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.book-title {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.book-price {
+    font-size: 18px;
+    font-weight: 500;
+    margin: 100px 0 20px 0;
+}
+.book-button {
+    display: inline-block;
+    padding: 10px 20px;
+    width: 150px;
+    background: red;
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.book-button:hover {
+    scale: 1.1;
+}
+.strikethrough {
+    text-decoration: line-through;
+    color: red;
+}
+
+.slider-container {
+	padding: 2rem;
+}
+
+.slider-wrapper {
+	position: relative;
+	max-width: 25%;
+	margin: 0 auto;
+}
+

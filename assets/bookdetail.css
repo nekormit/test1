@@ -1,0 +1,220 @@
+/*
+RMIT University Vietnam
+Course: COSC2430 Web Programming
+Semester: 2023A
+Assessment: Assignment 1
+Author: Tran Nhat Minh
+ID: s3977767
+Acknowledgement: Acknowledge the resources that you use here.
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@media (min-width: 769px) {
+    .main-container {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-bottom: 30px;
+    }
+    .big-image-container {
+        display: flex;
+        justify-content: left;
+        flex-wrap: wrap;
+        margin-bottom: 20px;
+    }
+    .big-image {
+        width: 350px;
+        height: 550px;
+        border: 8px solid #24262b;
+        border-radius: 20px;
+        overflow: hidden;
+        position: relative;
+    }
+    .small-images-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-bottom: 20px;
+    }
+    .small-image {
+        width: 100px;
+        height: 170px;
+        border: 8px solid #24262b;
+        border-radius: 20px;
+        margin: 8px 10px; 
+        overflow: hidden;
+        position: relative;
+    }
+    .book-img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .book-info-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-bottom: 20px;
+    }
+    h1.book-title {
+        font-family: 'Poppins', sans-serif;
+        font-size: 40px;
+        font-weight: 600;
+        margin: 10px 30px;
+        color: #fff;
+    }
+    h3.book-author {
+        font-family: 'Poppins', sans-serif;
+        text-transform: capitalize;
+        font-size: 20px;
+        font-weight: 500;
+        margin: 10px 30px;
+        color: #fff;
+    }
+    .book-price {
+        font-size: 18px;
+        font-weight: 500;
+        margin: 10px 30px;
+        color: #fff;
+    }
+    .book-button {
+        display: inline-block;
+        margin: 60px 30px;
+        padding: 10px 20px;
+        width: 180px;
+        background: red;
+        color: white;
+        font-size: 20px;
+        font-weight: 700;
+        border-radius: 30px;
+        border: none;
+        outline: none;
+        text-decoration: none;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+    .book-button:hover {
+        scale: 1.1;
+    }
+    .strikethrough {
+        text-decoration: line-through;
+        color: red;
+    }
+    h1.book-description-label {
+        font-family: 'Poppins', sans-serif;
+        font-size: 40px;
+        font-weight: 600;
+        margin: 10px 30px;
+        color: #fff;
+    }
+    p.book-description {
+        font-family: 'Poppins', sans-serif;
+        color: #fff;
+        margin: 10px 30px;
+        text-align: justify;
+    }       
+}
+
+@media (max-width:768px) {
+    .big-image-container {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-bottom: 20px;
+    }
+    .big-image {
+        width: 320px;
+        height: 500px;
+        border: 8px solid #24262b;
+        border-radius: 20px;
+        margin: 10px;
+        overflow: hidden;
+        position: relative;
+    }
+    .small-images-container {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-bottom: 20px;
+    }
+    .small-image {
+        width: 128px;
+        height: 200px;
+        border: 8px solid #24262b;
+        border-radius: 20px;
+        margin: 10px;
+        overflow: hidden;
+        position: relative;
+    }
+    .book-img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .book-info-container {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-bottom: 20px;
+    }
+    h1.book-title {
+        font-family: 'Poppins', sans-serif;
+        font-size: 40px;
+        font-weight: 600;
+        margin: 10px 30px;
+        color: #fff;
+    }
+    h3.book-author {
+        font-family: 'Poppins', sans-serif;
+        text-transform: capitalize;
+        font-size: 20px;
+        font-weight: 500;
+        margin: 10px 30px;
+        color: #fff;
+    }
+    .book-price {
+        font-size: 18px;
+        font-weight: 500;
+        margin: 10px 30px;
+        color: #fff;
+    }
+    .book-button {
+        display: inline-block;
+        margin: 60px 30px;
+        padding: 10px 20px;
+        width: 180px;
+        background: red;
+        color: white;
+        font-size: 20px;
+        font-weight: 700;
+        border-radius: 30px;
+        border: none;
+        outline: none;
+        text-decoration: none;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+    .book-button:hover {
+        scale: 1.1;
+    }
+    .strikethrough {
+        text-decoration: line-through;
+        color: red;
+    }
+    h1.book-description-label {
+        font-family: 'Poppins', sans-serif;
+        font-size: 40px;
+        font-weight: 600;
+        margin: 10px 30px;
+        color: #fff;
+    }
+    p.book-description {
+        font-family: 'Poppins', sans-serif;
+        color: #fff;
+        margin: 10px 30px;
+        text-align: justify;
+    }
+}
